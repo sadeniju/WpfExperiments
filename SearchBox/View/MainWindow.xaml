@@ -28,7 +28,7 @@
         
         <!-- THE SEARCHBOX -->
         <!-- Label which overlays the searchbox -->
-        <Label x:Name="searchLabel" Content="Search..." Opacity="0.5"
+        <Label x:Name="searchLabel" Content="Search..." 
                Grid.Row="0"/>
         
         <!-- Searchbox -->
@@ -52,7 +52,8 @@
             <!-- The list's headline -->
             <Label Content="Results" FontSize="15" FontWeight="SemiBold" />
 
-            <!-- The list's header (maybe there is another (less constructed) way to add a header) -->
+            <!-- @TODO replace the list with a table -->
+            <!-- The list's header-->
             <Grid Background="#1111">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"/>
