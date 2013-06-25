@@ -1,0 +1,74 @@
+﻿<Window x:Class="SearchBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fancy Stuff" Height="350" Width="525">
+    <Window.Resources>
+        <!-- Defines how to display book objects (in the listbox below) -->
+        <DataTemplate x:Key="bookTemplate">
+            <Grid Margin="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding Author}" Grid.Column="0"/>
+                <TextBlock Text="{Binding Title}" Grid.Column="1"/>
+                <TextBlock Text="{Binding ReleaseDate}" Grid.Column="2"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    
+    <!-- GUI -->
+    <Grid Margin="10">
+        <!-- Layout definitions -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!-- THE SEARCHBOX -->
+        <!-- Label which overlays the searchbox -->
+        <Label x:Name="searchLabel" Content="Search..." Opacity="0.5"
+               Grid.Row="0"/>
+        
+        <!-- Searchbox -->
+        <TextBox x:Name="searchBox"
+                 Opacity="0.5"
+                 BorderBrush="Black" BorderThickness="2"
+                 PreviewMouseDown="searchBox_MouseLeftButtonDown"
+                 TextChanged="searchBox_TextChanged"
+                 LostFocus="searchBox_LostFocus"
+                 Grid.Row="0"/>
+        
+        <!-- Reset button -->
+        <Button Click="ResetButton_Click" Background="Transparent" 
+                Width="25" HorizontalAlignment="Right"
+                Grid.Row="0">
+            <Image Source="/Images/reset_button.png" />
+        </Button>
+
+        <!-- List display area -->
+        <StackPanel Grid.Row="1" Margin="0,10,0,0">
+            <!-- The list's headline -->
+            <Label Content="Results" FontSize="15" FontWeight="SemiBold" />
+
+            <!-- The list's header (maybe there is another (less constructed) way to add a header) -->
+            <Grid Background="#1111">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Author" Grid.Column="0" Margin="5"/>
+                <TextBlock Text="Title" Grid.Column="1" Margin="5"/>
+                <TextBlock Text="Release Date" Grid.Column="2" Margin="5"/>
+            </Grid>
+
+            <!-- List bound to the collection of books -->
+            <ListBox x:Name="resultsList" BorderBrush="Transparent"
+                 ItemsSource="{Binding}"
+                 ItemTemplate="{StaticResource bookTemplate}" >
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
