@@ -3,6 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Fancy Stuff" Height="350" Width="525">
     <Window.Resources>
+        
+        
         <!-- Defines how to display book objects (in the listbox below) -->
         <DataTemplate x:Key="bookTemplate">
             <Grid Margin="2">
@@ -11,7 +13,7 @@
                     <ColumnDefinition Width="250"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="{Binding Author}" Grid.Column="0"/>
+                <TextBlock Text="{Binding Author.FullName}" Grid.Column="0"/>
                 <TextBlock Text="{Binding Title}" Grid.Column="1"/>
                 <TextBlock Text="{Binding ReleaseDate}" Grid.Column="2"/>
             </Grid>

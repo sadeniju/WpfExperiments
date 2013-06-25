@@ -1,0 +1,28 @@
+﻿<Window x:Class="DataBindingPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!-- Book info -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10,10,0,0">
+            <TextBlock Text="You are currently reading:" FontSize="10"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="{Binding Path=Author.FirstName}" MinWidth="100" Margin="0,0,10,0"/>
+                <TextBox Text="{Binding Path=Author.Surname}" MinWidth="100" />
+            </StackPanel>
+            <TextBox Text="{Binding Path=Title}"/>
+            <TextBlock Text="Info:" FontSize="9" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Path=Author.FirstName}" MinWidth="20"/>
+            <TextBlock Text="{Binding Path=Author.Surname}" MinWidth="20"/>
+            <TextBlock Text="{Binding Path=Title}"/>
+        </StackPanel>
+        
+        <!-- Change author -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="0,10,10,0">
+            <TextBlock Text="Edit author" FontSize="10"/>
+            <TextBox x:Name="authorFirstNameTextBox" Text="" MinWidth="150" />
+            <TextBox x:Name="authorSurnameTextBox" Text="" MinWidth="150"/>
+            <Button x:Name="editAuthorButton" Content="edit"  Click="editAuthorButton_Click" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -11,8 +11,6 @@ c:\users\sstrebl\documents\visual studio 2010\Projects\WpfExperiments\SearchBox\
 c:\users\sstrebl\documents\visual studio 2010\Projects\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.pdb
 c:\users\sstrebl\documents\visual studio 2010\Projects\WpfExperiments\SearchBox\obj\x86\Debug\View\MainWindow.baml
 c:\users\sstrebl\documents\visual studio 2010\Projects\WpfExperiments\SearchBox\obj\x86\Debug\View\MainWindow.g.cs
-C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.exe
-C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.pdb
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\bin\Debug\SearchBox.exe
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\bin\Debug\SearchBox.pdb
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\ResolveAssemblyReference.cache
@@ -24,3 +22,7 @@ C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchB
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.Properties.Resources.resources
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\obj\x86\Debug\SearchBox.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SearchBox\bin\Debug\SharedSampleModels.pdb

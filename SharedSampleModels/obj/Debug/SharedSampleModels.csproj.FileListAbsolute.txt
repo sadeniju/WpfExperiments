@@ -1,0 +1,5 @@
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SharedSampleModels\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SharedSampleModels\bin\Debug\SharedSampleModels.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SharedSampleModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SharedSampleModels\obj\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\SharedSampleModels\obj\Debug\SharedSampleModels.pdb

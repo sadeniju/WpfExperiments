@@ -1,0 +1,30 @@
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\bin\Debug\ErrorDialogSample.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\bin\Debug\ErrorDialogSample.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialog.baml
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialog.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample_MarkupCompile.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.g.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.Properties.Resources.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\bin\Debug\ErrorDialogSample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\bin\Debug\ErrorDialogSample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialog.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialog.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample_MarkupCompile.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.g.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\ErrorDialogSample.Properties.Resources.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ErrorDialogSample\obj\x86\Debug\GenerateResource.write.1.tlog

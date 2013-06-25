@@ -1,0 +1,10 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ListComprehension\bin\Debug\ListComprehension.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ListComprehension\bin\Debug\ListComprehension.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ListComprehension\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ListComprehension\obj\x86\Debug\ListComprehension.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\ListComprehension\obj\x86\Debug\ListComprehension.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ListComprehension\obj\x86\Debug\ListComprehension.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ListComprehension\obj\x86\Debug\ListComprehension.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ListComprehension\bin\Debug\ListComprehension.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ListComprehension\bin\Debug\ListComprehension.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\ListComprehension\obj\x86\Debug\ResolveAssemblyReference.cache

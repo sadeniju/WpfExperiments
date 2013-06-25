@@ -1,0 +1,10 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqPractice\bin\Debug\LinqPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqPractice\bin\Debug\LinqPractice.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqPractice\obj\x86\Debug\LinqPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqPractice\obj\x86\Debug\LinqPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqPractice\obj\x86\Debug\LinqPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqPractice\obj\x86\Debug\LinqPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqPractice\bin\Debug\LinqPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqPractice\bin\Debug\LinqPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqPractice\obj\x86\Debug\ResolveAssemblyReference.cache

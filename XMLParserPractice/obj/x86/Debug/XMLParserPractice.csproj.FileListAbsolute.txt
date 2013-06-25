@@ -1,0 +1,12 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XMLParserPractice\bin\Debug\XMLParserPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XMLParserPractice\bin\Debug\XMLParserPractice.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XMLParserPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XMLParserPractice\obj\x86\Debug\XMLParserPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XMLParserPractice\obj\x86\Debug\XMLParserPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\obj\x86\Debug\XMLParserPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\obj\x86\Debug\XMLParserPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\bin\Debug\XMLParserPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\bin\Debug\XMLParserPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\XMLParserPractice\bin\Debug\SharedSampleModels.pdb

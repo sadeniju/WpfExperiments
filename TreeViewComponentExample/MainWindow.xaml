@@ -1,0 +1,35 @@
+﻿<Window x:Class="TreeViewComponentExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <!-- Template for displaying children -->
+        <HierarchicalDataTemplate x:Key="ChildrenTemplate" 
+                                  ItemsSource="{Binding Path=Children}" 
+                                  >
+            <TextBlock Text="{Binding Path=Title}" />
+
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <!--- Add item -->
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="newChildTitleTextBox" Width="150"/>
+                <Button Name="AddNewChild" Content="Add" Margin="10,0,0,0" 
+                        Click="AddNewChild_Click"/>
+            </StackPanel>
+        
+            <!-- Display tree -->
+            <TreeView Name="ComponentTree" Height="220"  Width="400" HorizontalAlignment="Left" Margin="0,10,0,0"
+                      ItemsSource="{Binding}"
+                      ItemTemplate="{DynamicResource ChildrenTemplate}"
+                      />
+
+            <!--- Delete item -->
+            <Button Name="DeleteChild" Content="Delete" Margin="10,0,0,0" HorizontalAlignment="Left"
+                    Click="DeleteChild_Click" />
+        </StackPanel>
+        
+    </Grid>
+</Window>

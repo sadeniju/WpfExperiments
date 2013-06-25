@@ -1,0 +1,47 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\bin\Debug\MvvmExample2.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\bin\Debug\MvvmExample2.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\App.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.lref
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MainWindow.baml
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.g.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.Properties.Resources.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\bin\Debug\MvvmExample2.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\bin\Debug\MvvmExample2.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.lref
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.g.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.Properties.Resources.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\MvvmExample2\obj\x86\Debug\MvvmExample2.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\bin\Debug\MvvmExample2.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\bin\Debug\MvvmExample2.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2_MarkupCompile.lref
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2.g.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\MvvmExample2.Properties.Resources.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\MvvmExample2\bin\Debug\SharedSampleModels.pdb

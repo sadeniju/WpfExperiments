@@ -1,0 +1,10 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LambdaPractice\bin\Debug\LambdaPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LambdaPractice\bin\Debug\LambdaPractice.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LambdaPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LambdaPractice\obj\x86\Debug\LambdaPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LambdaPractice\obj\x86\Debug\LambdaPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LambdaPractice\obj\x86\Debug\LambdaPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LambdaPractice\obj\x86\Debug\LambdaPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LambdaPractice\bin\Debug\LambdaPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LambdaPractice\bin\Debug\LambdaPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LambdaPractice\obj\x86\Debug\ResolveAssemblyReference.cache

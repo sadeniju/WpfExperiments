@@ -1,0 +1,13 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Release\TreeViewExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Release\TreeViewExample.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\MainWindow.baml
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\MainWindow.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\App.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\TreeViewExample_MarkupCompile.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\TreeViewExample.g.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\TreeViewExample.Properties.Resources.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\TreeViewExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Release\TreeViewExample.pdb

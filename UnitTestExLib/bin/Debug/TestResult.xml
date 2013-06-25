@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\UnitTestExLib\bin\Debug\UnitTestExLib.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-01-31" time="16:05:44">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5466" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="ESCHLER-PC" user="SStrebl" user-domain="Eschler-PC" />
+  <culture-info current-culture="de-DE" current-uiculture="de-DE" />
+  <test-suite type="Assembly" name="C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\UnitTestExLib\bin\Debug\UnitTestExLib.dll" executed="True" result="Success" success="True" time="0.042" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="UnitTestExample" executed="True" result="Success" success="True" time="0.036" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="PersonTests" executed="True" result="Success" success="True" time="0.036" asserts="0">
+            <results>
+              <test-case name="UnitTestExample.PersonTests.IsValidFullName_EmptyLastName_ThrowsException" executed="True" result="Success" success="True" time="0.018" asserts="0" />
+              <test-case name="UnitTestExample.PersonTests.IsValidFullName_FullName_ReturnsTrue" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

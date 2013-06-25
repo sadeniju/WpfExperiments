@@ -1,0 +1,28 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\bin\Debug\DataBindingPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\bin\Debug\DataBindingPractice.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\MainWindow.baml
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\App.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\DataBindingPractice_MarkupCompile.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\DataBindingPractice.g.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\DataBindingPractice.Properties.Resources.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\DataBindingPractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DataBindingPractice\obj\x86\Debug\DataBindingPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\DataBindingPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\DataBindingPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\bin\Debug\DataBindingPractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\bin\Debug\DataBindingPractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\DataBindingPractice_MarkupCompile.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\DataBindingPractice.g.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\DataBindingPractice.Properties.Resources.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DataBindingPractice\bin\Debug\SharedSampleModels.pdb

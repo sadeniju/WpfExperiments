@@ -1,0 +1,41 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Debug\TreeViewExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Debug\TreeViewExample.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\MainWindow.baml
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\App.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample_MarkupCompile.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.g.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.Properties.Resources.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Debug\TreeViewExample.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\bin\Debug\TreeViewExample.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample_MarkupCompile.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.g.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.Properties.Resources.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\TreeViewExample\obj\x86\Debug\TreeViewExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\TreeViewExample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\TreeViewExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\bin\Debug\TreeViewExample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\bin\Debug\TreeViewExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\TreeViewExample_MarkupCompile.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\TreeViewExample.g.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\TreeViewExample.Properties.Resources.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TreeViewExample\bin\Debug\SharedSampleModels.pdb

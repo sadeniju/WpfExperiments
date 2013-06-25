@@ -1,0 +1,73 @@
+﻿<Window x:Class="TreeViewExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="10">
+                <TextBlock Text="TreeView with Databinding" FontSize="15" FontWeight="DemiBold"/>
+                <!-- Add a new item -->
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBox Name="ChildName" Width="150"/>
+                    <Button Name="ChildAdderButton" Content="Add" Margin="10,0,0,0" Click="AddChildButton_Click"/>
+                </StackPanel>
+
+                <!-- Display bound data as a tree -->
+                <TreeView Name="TreeView1" 
+                      ItemsSource="{Binding}"
+                      Height="220"  Width="400" HorizontalAlignment="Left" Margin="0,10,0,0">
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding Path=PublishedBooks}">
+                            <!-- Author Name-->
+                            <TextBlock Text="{Binding Path=Name}" />
+                            <HierarchicalDataTemplate.ItemTemplate>
+                                <DataTemplate>
+                                    <!-- Book Title -->
+                                    <TextBlock Text="{Binding Path=Title}" />
+                                </DataTemplate>
+                            </HierarchicalDataTemplate.ItemTemplate>
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+
+                <!-- Delete an item -->
+                <Button Name="DeleteItem" Content="Delete"
+                    Click="DeleteItem_Click"
+                    HorizontalAlignment="Left" Margin="0,10,0,0" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <!-- TreeView without databinding -->
+                <TextBlock Text="TreeView" FontSize="15" FontWeight="DemiBold" Margin="0,10,0,0"/>
+                <TreeView Margin="0,42,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" MinHeight="220">
+                    <TreeViewItem Header="Books">
+                        <TreeViewItem Header="To Kill a Mockingbird"/>
+                        <TreeViewItem Header="Don't Try This at Home"/>
+                        <TreeViewItem Header="Do Androids Dream of Electric Sheep?"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Movies">
+                        <TreeViewItem Header="Death Proof">
+                            <TreeViewItem Header="Regisseur">
+                                <TreeViewItem Header="Quentin Tarantino"/>
+                            </TreeViewItem>
+                            <TreeViewItem Header="Actors">
+                                <TreeViewItem Header="Kurt Russel"/>
+                                <TreeViewItem Header="Quentin Tarantino"/>
+                            </TreeViewItem>
+                        </TreeViewItem>
+                        <TreeViewItem Header="The Fugitive">
+                            <TreeViewItem Header="Actors">
+                                <TreeViewItem Header="Harrison Ford"/>
+                            </TreeViewItem>
+                        </TreeViewItem>
+                        <TreeViewItem Header="39,90">
+                            <TreeViewItem Header="Actors">
+                                <TreeViewItem Header="Jean Dujardin"/>
+                            </TreeViewItem>
+                        </TreeViewItem>
+                    </TreeViewItem>
+                </TreeView>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="MvvmExample2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MvvmExample2"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <!-- Declaratively create an instance of BookViewModel -->
+        <local:BookViewModel />
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <!-- Display Title -->
+            <TextBlock Text="Book's Title:" FontWeight="Black" FontSize="15"/>
+            <TextBlock Text="{Binding Title}" FontWeight="Light" FontSize="12"/>
+            
+            <!-- Content of the TextBox is bound to a property of the viewmodel. -->
+            <TextBox Name="BookTitleTextBox" HorizontalAlignment="Left"
+                     Text="{Binding Path=TitleText}"
+                     Width="150"/>
+            
+            <!-- Command execution on buttonclick -->
+            <Button Content="Rename" Width="50" HorizontalAlignment="Left"
+                    Command="{Binding UpdateBookTitleCommand}"
+                    Name="BookUpdateButton"/>
+
+            <!-- List of pages -->
+            <TextBlock Text="Pages" FontWeight="Black" FontSize="15"/>
+            <ListBox ItemsSource="{Binding Pages}"
+                     SelectedItem="{Binding Path=SelectedPage}"/>
+            <StackPanel Orientation="Horizontal">
+                <!-- Remove page -->
+                <Button Name="RemovePageButton" Content="Remove" 
+                        Command="{Binding RemovePageCommand}"/>
+                <!-- Add page -->
+                <Button Name="AddPageButton" Content="Add new page"
+                        Command="{Binding AddPageCommand}"/>
+            </StackPanel>
+        </StackPanel>    
+    </Grid>
+</Window>

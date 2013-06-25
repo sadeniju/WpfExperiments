@@ -1,0 +1,12 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqToXmlExample\bin\Debug\LinqToXmlExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqToXmlExample\bin\Debug\LinqToXmlExample.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqToXmlExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqToXmlExample\obj\x86\Debug\LinqToXmlExample.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\LinqToXmlExample\obj\x86\Debug\LinqToXmlExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\obj\x86\Debug\LinqToXmlExample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\obj\x86\Debug\LinqToXmlExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\bin\Debug\LinqToXmlExample.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\bin\Debug\LinqToXmlExample.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\bin\Debug\SharedSampleModels.dll
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\LinqToXmlExample\bin\Debug\SharedSampleModels.pdb

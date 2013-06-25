@@ -1,0 +1,25 @@
+﻿<Window x:Class="FsWpfControls.FsRichTextBox.LinkDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LinkDialog" Height="154" Width="300">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin ="10">
+            <!-- Name of the link -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name"/>
+                <TextBox Name="linkName" Width="215" Margin="10,0,0,0" />
+            </StackPanel>
+            <!-- Url of the link -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="URL"/>
+                <TextBox Name="linkUrl"
+                         Text="http://" Width="215" Margin="20,0,0,0" />
+            </StackPanel>
+            <!-- Buttons -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                <Button Content="Cancel" Margin="0,0,10,0" Click="CancelButton_Click" />
+                <Button Content="OK" Click="OkButton_Click" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

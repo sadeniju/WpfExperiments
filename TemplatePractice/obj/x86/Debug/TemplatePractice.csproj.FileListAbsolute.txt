@@ -1,0 +1,47 @@
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\bin\Debug\TemplatePractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\bin\Debug\TemplatePractice.pdb
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\App.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice_MarkupCompile.cache
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice_MarkupCompile.lref
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\MainWindow.baml
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.g.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\DependencyPropertyPractice.Properties.Resources.resources
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.exe
+C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\bin\Debug\TemplatePractice.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\bin\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice_MarkupCompile.cache
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice_MarkupCompile.lref
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.g.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\DependencyPropertyPractice.Properties.Resources.resources
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.exe
+C:\Users\SStrebl\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\DependencyPropertyPractice\obj\x86\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\TemplatePractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\bin\Debug\TemplatePractice.exe
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\bin\Debug\TemplatePractice.pdb
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\MainWindow.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\App.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\TemplatePractice_MarkupCompile.cache
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\TemplatePractice_MarkupCompile.lref
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\MainWindow.baml
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\TemplatePractice.g.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\DependencyPropertyPractice.Properties.Resources.resources
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\SStrebl\Documents\GitHub\WpfExperiments\TemplatePractice\obj\x86\Debug\GenerateResource.write.1.tlog
