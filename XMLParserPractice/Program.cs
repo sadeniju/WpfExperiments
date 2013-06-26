@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Xml.Serialization;
-using SampleModels;
+using SharedClasses.SampleModels;
 
 namespace XMLParserPractice
 {

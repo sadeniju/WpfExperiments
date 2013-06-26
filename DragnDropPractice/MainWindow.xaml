@@ -1,17 +1,26 @@
 ﻿<Window x:Class="DragnDropPractice.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="350">
     <Grid>
-        <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Label Content="Insert books at any position with fancy DnD" 
+                   FontWeight="SemiBold" FontSize="15"/>
+            
             <!-- Display ToString representation of books -->
-            <ListBox Name="BookListBox"
-                     ItemsSource="{Binding Path=Books}" 
+            <ListView Name="BookListView"
+                     ItemsSource="{Binding Path=BookViewModels}" 
                      AllowDrop="True" 
-                     PreviewMouseLeftButtonDown="ListBox_PreviewMouseLeftButtonDown"
-                     MouseMove="ListBox_MouseMove"
-                     Drop="BookListBox_Drop"
-                     Width="400" Height="300" />
+                     MouseMove="ListView_MouseMove"
+                     Drop="BookListView_Drop"
+                     BorderBrush="Transparent">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Padding" Value="0,2"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+            <!--PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown"-->
         </StackPanel>
     </Grid>
 </Window>

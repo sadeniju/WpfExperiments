@@ -1,5 +1,0 @@
-C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XmlDocumentPractice\bin\Release\XmlDocumentPractice.exe
-C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XmlDocumentPractice\bin\Release\XmlDocumentPractice.pdb
-C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XmlDocumentPractice\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XmlDocumentPractice\obj\x86\Release\XmlDocumentPractice.exe
-C:\Users\SStreber\Documents\Visual Studio 2010\Projects\namlook-creator-wpf\XmlDocumentPractice\obj\x86\Release\XmlDocumentPractice.pdb

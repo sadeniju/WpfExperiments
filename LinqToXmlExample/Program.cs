@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Xml.Linq;
-using SampleModels;
+using SharedClasses.SampleModels;
 
 namespace LinqToXmlExample
 {
@@ -102,7 +101,7 @@ namespace LinqToXmlExample
         /// </summary>
         static void CreateXmlFromObjects(){
             List<Book> books = new List<Book> { 
-                new Book { Author = new Author("Elizabeth", "Corley"), Title = "Pretty Little Things", ReleaseDate = "2007/08/01" },
+                new Book { Author = new Author("Elizabeth Corley"), Title = "Pretty Little Things", ReleaseDate = "2007/08/01" },
                 new Book("Stephen Hawking", "A Brief History Of Time", "2011/11/01"),
                 new Book("Neal Stephenson", "REAMDE",  "2001/03/20" )
             };

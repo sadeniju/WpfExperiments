@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchBox", "SearchBox\SearchBox.csproj", "{92201C41-CE25-4389-BC53-F3222398BD08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedSampleModels", "SharedSampleModels\SharedSampleModels.csproj", "{C2B51170-46CB-47DF-BBC0-2890C26122C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClasses", "SharedSampleModels\SharedClasses.csproj", "{C2B51170-46CB-47DF-BBC0-2890C26122C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesAndAnonymousMethodsPractice", "AnonymousFunctionsPractice\DelegatesAndAnonymousMethodsPractice.csproj", "{3DD98E72-AE5A-46BA-ACC5-1EA4E1E65730}"
 EndProject
@@ -52,6 +52,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLParserPractice", "XMLParserPractice\XMLParserPractice.csproj", "{73412B4B-688E-4AFF-831E-E3E7D65A25D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLParserPractice2", "XMLParserPractice2\XMLParserPractice2.csproj", "{06698C9E-CA1E-491E-BBE3-E7BAD812F7EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationIconConfigFileAssemblyInfo", "ApplicationIconAndConfigExample\ApplicationIconConfigFileAssemblyInfo.csproj", "{8541DDEA-F573-43BD-8D7D-C2B821411310}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -323,6 +325,16 @@ Global
 		{06698C9E-CA1E-491E-BBE3-E7BAD812F7EB}.Release|Mixed Platforms.Build.0 = Release|x86
 		{06698C9E-CA1E-491E-BBE3-E7BAD812F7EB}.Release|x86.ActiveCfg = Release|x86
 		{06698C9E-CA1E-491E-BBE3-E7BAD812F7EB}.Release|x86.Build.0 = Release|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Debug|x86.ActiveCfg = Debug|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Debug|x86.Build.0 = Debug|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|Any CPU.ActiveCfg = Release|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|x86.ActiveCfg = Release|x86
+		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

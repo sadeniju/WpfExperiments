@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Collections.ObjectModel;
-using SampleModels;
+﻿using System.Collections.ObjectModel;
+using SharedClasses.SampleModels;
 
 namespace TreeViewExample {
     public class Author {

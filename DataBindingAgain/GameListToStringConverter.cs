@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Data;  // for Converter
 using System.Text.RegularExpressions;
-using SampleModels;   // for splitting strings (regex)
+using SharedClasses.SampleModels;   // for splitting strings (regex)
 
 namespace DataBindingPracticeDos
 {
@@ -32,7 +30,7 @@ namespace DataBindingPracticeDos
         // Conversion String to GameCatalogue (not yet required/in use)
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            GameCatalogue gc = new GameCatalogue(new Author("Unknown", ""));
+            GameCatalogue gc = new GameCatalogue(new Author("Unknown"), "-");
             string[] catInfo = Regex.Split((string)value, "\r\n");   // Stringinfo am Zeilenumbruch splitten --> enthaelt pro Zeile Info des Games (Title by Publisher)
             Console.WriteLine("Conversion String to GameCatalogue occured.");
 

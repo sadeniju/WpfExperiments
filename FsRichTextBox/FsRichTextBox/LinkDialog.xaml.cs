@@ -13,7 +13,8 @@ using System.Windows.Shapes;
 
 namespace FsWpfControls.FsRichTextBox {
     /// <summary>
-    /// Interaktionslogik für LinkDialog.xaml
+    /// Interaction logic for LinkDialog.xaml
+    /// by Sadeniju
     /// </summary>
     public partial class LinkDialog : Window {
         public LinkDialog() {

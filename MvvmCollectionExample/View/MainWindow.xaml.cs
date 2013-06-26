@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using MvvmCollectionExample.Models;
-using MvvmCollectionExample.ViewModels;
-using SampleModels;
+﻿using System.Windows;
+using SharedClasses.SampleModels;
+using SharedClasses.SampleViewModels;
+using System;
 
 namespace MvvmCollectionExample {
     /// <summary>
@@ -21,7 +9,7 @@ namespace MvvmCollectionExample {
     /// </summary>
     public partial class MainWindow : Window {
         #region Properties
-        public LibraryViewModel lib { get; private set; }
+        public LibraryViewModel LibraryViewModel { get; private set; }
         #endregion
 
         #region Construction
@@ -29,8 +17,9 @@ namespace MvvmCollectionExample {
         /// Constructs the MainWindow.
         /// </summary>
         public MainWindow() {
-            lib = new LibraryViewModel(new Library());
-            this.DataContext = lib;
+            LibraryViewModel = new LibraryViewModel();
+            LibraryViewModel.CreateDummy();
+            this.DataContext = LibraryViewModel;
             InitializeComponent();
         }
         #endregion
@@ -43,7 +32,15 @@ namespace MvvmCollectionExample {
         /// <param name="e"></param>
         private void AddBook_Click(object sender, RoutedEventArgs e) {
             if (!string.IsNullOrEmpty(authorInput.Text) && !string.IsNullOrEmpty(titleInput.Text)) {
-                lib.Books.Add(new BookViewModel(new Book(authorInput.Text, titleInput.Text)));
+                BookViewModel newBookViewModel = new BookViewModel();
+                newBookViewModel.AuthorViewModel.FullName = authorInput.Text;
+                newBookViewModel.Title = titleInput.Text;
+                LibraryViewModel.BookViewModels.Add(newBookViewModel);
+            }
+
+            Console.WriteLine("- MODELS -");
+            foreach (Book b in LibraryViewModel.Model.Books) {
+                Console.WriteLine(b.ToString());
             }
         }
         #endregion

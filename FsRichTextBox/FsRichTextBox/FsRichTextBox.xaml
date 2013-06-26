@@ -68,7 +68,7 @@
             <StackPanel Orientation="Horizontal" Height="24" 
                         Background="{Binding ElementName=FsRichTextBoxControl, Path=ToolbarBackground}">
 
-                <!-- Font family combo box  -->
+                <!-- @EDITED by Sadeniju: Font family combo box  -->
                 <ComboBox x:Name="FontFamilyCombo" 
                           Height="23" Width="100"  Margin="5,2,0,2" 
                           IsEditable="True" 
@@ -86,27 +86,27 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
 
-                <!-- Font size combo box @EDITED added Text -->
+                <!-- @EDITED by Sadeniju: Font size combo box -->
                 <ComboBox x:Name="FontSizeCombo" Height="23" Width="40" Margin="5,2,5,2" 
                         IsEditable="True" 
                         SelectionChanged="OnFontSizeComboSelectionChanged"
                         Text="{Binding ElementName=FsRichTextBoxControl, Path=NewFontSize, UpdateSourceTrigger=LostFocus}" 
                         KeyDown="FontSizeCombo_KeyDown" />
 
-                <!-- @EDITED color chip -->
+                <!-- @EDITED by Sadeniju: color chip -->
                 <custom:ColorChip Name="fontColor" Width="17" Height="17" 
                                   Color="Black"
                                   ColorChanged="fontColor_ColorChanged"/>
-                <!-- @EDITED Seperator -->
+                <!-- @EDITED by Sadeniju: Seperator -->
                 <Image Source="Images\separator.png" Stretch="None" SnapsToDevicePixels="True" />
-                
-                <!-- @EDITED Hyperlink Button -->
+
+                <!-- @EDITED by Sadeniju: Hyperlink Button -->
                 <Button Click="LinkButton_Click"
                         ToolTip="Insert a Hyperlink"
                         Template="{StaticResource FlatButtonControlTemplate}">
                     <Image Source="Images\linkicon.png" Stretch="None" SnapsToDevicePixels="True" />
                 </Button>
-                <!-- @EDITED Seperator -->
+                <!-- @EDITED by Sadeniju: Seperator -->
                 <Image Source="Images\separator.png" Stretch="None" SnapsToDevicePixels="True" />
                 
                 <!-- CopyPaste Commands -->

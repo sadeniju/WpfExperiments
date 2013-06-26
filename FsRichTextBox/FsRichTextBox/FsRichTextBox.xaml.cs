@@ -19,6 +19,12 @@ namespace FsWpfControls.FsRichTextBox
 {
     /// <summary>
     /// Interaction logic for FsRichTextBox.xaml
+    /// 
+    /// A Bindable WPF RichTextBox
+    /// By David Veeneman
+    /// http://www.codeproject.com/Articles/66054/A-Bindable-WPF-RichTextBox
+    /// 
+    /// Extended by Sadeniju (marked added/edited code parts with @EDITED)
     /// </summary>
     public partial class FsRichTextBox : UserControl
     {

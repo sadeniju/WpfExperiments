@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Collections.ObjectModel;
-using SampleModels;
+using SharedClasses.SampleModels;
 
 namespace TreeViewComponentExample {
     /// <summary>

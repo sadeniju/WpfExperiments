@@ -6,6 +6,10 @@ namespace FsRichTextBoxDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// 
+    /// A Bindable WPF RichTextBox
+    /// By David Veeneman
+    /// http://www.codeproject.com/Articles/66054/A-Bindable-WPF-RichTextBox
     /// </summary>
     public partial class MainWindow : Window
     {

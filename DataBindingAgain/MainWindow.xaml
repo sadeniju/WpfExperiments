@@ -11,14 +11,14 @@
     <Grid>
         <!-- Elemente fuer die Anzeige des Game-Katalogs-->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
-            <TextBlock Text="The Essential Game Catalogue" FontSize="15" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Title}" FontSize="15" FontWeight="Bold"/>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="by " FontSize="11" FontWeight="Thin" />
-                <TextBlock Text="{Binding Path=Author.FullName}" FontSize="11" FontWeight="Thin" MinWidth="100" />
+                <TextBlock Text="{Binding Path=AuthorViewModel.FullName}" FontSize="11" FontWeight="Thin" MinWidth="100" />
             </StackPanel>
         </StackPanel>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
-            <ListView ItemsSource="{Binding Path=Games}" FontSize="13" MinWidth="280" MinHeight="200"/>
+            <ListView ItemsSource="{Binding Path=GameViewModels}" FontSize="13" MinWidth="280" MinHeight="200"/>
             <!-- <TextBlock Text="{Binding Path=Games, Converter={StaticResource myConverter}}" FontSize="13" MinWidth="250" MinHeight="200"/> -->
             <!-- <ListBox ItemsSource="{Binding Path=Games}" FontSize="13" MinWidth="250" MinHeight="200"/> -->
         </StackPanel>

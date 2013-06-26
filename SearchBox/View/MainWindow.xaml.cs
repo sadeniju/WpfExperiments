@@ -5,7 +5,8 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
-using SampleModels;
+using SharedClasses.SampleModels;
+using SharedClasses.ExtensionMethods;
 
 namespace SearchBox {
     /// <summary>
@@ -22,13 +23,13 @@ namespace SearchBox {
         public MainWindow() {
             // Create a dummy list of books
             library = new List<Book>{
-                new Book(new Author("George", "Gamow"), "One Two Three Infinity", "01/01/1975"),
-                new Book(new Author("Max", "Brooks"), "World War Z", "06/01/2013"),
-                new Book(new Author("Gillian", "Flynn"), "Dark Places", "13/09/2013"),
-                new Book(new Author("Somebody", "Else"), "The Mysterious Flame", "24/11/2013"),
-                new Book(new Author("Some", "Author"), "How To Kill A Mockingbird", "17/05/2013"),
-                new Book(new Author("Karin", "Slaughter"), "Triptych", "07/31/2013"),
-                new Book(new Author("Some", "Knuth"), "The Art of Computer Programming", "06/01/2013")
+                new Book(new Author("George Gamow"), "One Two Three Infinity", "01/01/1975"),
+                new Book(new Author("Max Brooks"), "World War Z", "06/01/2013"),
+                new Book(new Author("Gillian Flynn"), "Dark Places", "13/09/2013"),
+                new Book(new Author("Somebody Else"), "The Mysterious Flame", "24/11/2013"),
+                new Book(new Author("Some Writer"), "How To Kill A Mockingbird", "17/05/2013"),
+                new Book(new Author("Karin Slaughter"), "Triptych", "07/31/2013"),
+                new Book(new Author("Some Knuth"), "The Art of Computer Programming", "06/01/2013")
             };
 
             Books = new ObservableCollection<Book>();

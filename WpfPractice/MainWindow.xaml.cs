@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using SampleModels;
+using SharedClasses.SampleModels;
 
 namespace CSharpPractice
 {
@@ -9,7 +9,7 @@ namespace CSharpPractice
     /// </summary>
     public partial class MainWindow : Window
     {
-        Book myBook = new Book(new Author("Stephen", "Hawking"), "A Brief History Of Time", "03.01.1999");   // default private
+        Book myBook = new Book(new Author("Stephen Hawking"), "A Brief History Of Time", "03.01.1999");   // default private
 
         private int NumberOfClicks
         {

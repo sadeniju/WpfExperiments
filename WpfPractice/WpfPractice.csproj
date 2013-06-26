@@ -93,9 +93,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharedSampleModels\SharedSampleModels.csproj">
+    <ProjectReference Include="..\SharedSampleModels\SharedClasses.csproj">
       <Project>{C2B51170-46CB-47DF-BBC0-2890C26122C6}</Project>
-      <Name>SharedSampleModels</Name>
+      <Name>SharedClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

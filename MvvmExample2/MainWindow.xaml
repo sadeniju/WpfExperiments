@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:MvvmExample2"
         Title="MainWindow" Height="350" Width="525">
-    <Window.DataContext>
+    <!--<Window.DataContext>-->
         <!-- Declaratively create an instance of BookViewModel -->
-        <local:BookViewModel />
-    </Window.DataContext>
+        <!--<local:BookViewModel />-->
+    <!--</Window.DataContext>-->
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
             <!-- Display Title -->
@@ -15,18 +15,16 @@
             
             <!-- Content of the TextBox is bound to a property of the viewmodel. -->
             <TextBox Name="BookTitleTextBox" HorizontalAlignment="Left"
-                     Text="{Binding Path=TitleText}"
                      Width="150"/>
             
             <!-- Command execution on buttonclick -->
             <Button Content="Rename" Width="50" HorizontalAlignment="Left"
-                    Command="{Binding UpdateBookTitleCommand}"
-                    Name="BookUpdateButton"/>
+                    Click="BookUpdateButton_Click"/>
 
             <!-- List of pages -->
             <TextBlock Text="Pages" FontWeight="Black" FontSize="15"/>
-            <ListBox ItemsSource="{Binding Pages}"
-                     SelectedItem="{Binding Path=SelectedPage}"/>
+            <ListBox ItemsSource="{Binding PageViewModels}"
+                     SelectedItem="{Binding Path=SelectedPage, Mode=TwoWay}"/>
             <StackPanel Orientation="Horizontal">
                 <!-- Remove page -->
                 <Button Name="RemovePageButton" Content="Remove" 

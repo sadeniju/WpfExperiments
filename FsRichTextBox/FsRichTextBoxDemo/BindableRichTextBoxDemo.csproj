@@ -107,7 +107,7 @@
     </ProjectReference>
     <ProjectReference Include="..\FsRichTextBox\BindableRichTextBox.csproj">
       <Project>{091CE5BC-D5C3-4752-A244-053664873941}</Project>
-      <Name>FsRichTextBox</Name>
+      <Name>BindableRichTextBox</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

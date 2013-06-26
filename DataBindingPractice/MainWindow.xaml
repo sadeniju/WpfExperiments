@@ -7,13 +7,13 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10,10,0,0">
             <TextBlock Text="You are currently reading:" FontSize="10"/>
             <StackPanel Orientation="Horizontal">
-                <TextBox Text="{Binding Path=Author.FirstName}" MinWidth="100" Margin="0,0,10,0"/>
-                <TextBox Text="{Binding Path=Author.Surname}" MinWidth="100" />
+                <TextBox Text="{Binding Path=AuthorViewModel.FirstName}" MinWidth="100" Margin="0,0,10,0"/>
+                <TextBox Text="{Binding Path=AuthorViewModel.Surname}" MinWidth="100" />
             </StackPanel>
             <TextBox Text="{Binding Path=Title}"/>
             <TextBlock Text="Info:" FontSize="9" Margin="0,10,0,0"/>
-            <TextBlock Text="{Binding Path=Author.FirstName}" MinWidth="20"/>
-            <TextBlock Text="{Binding Path=Author.Surname}" MinWidth="20"/>
+            <TextBlock Text="{Binding Path=AuthorViewModel.FirstName}" MinWidth="20"/>
+            <TextBlock Text="{Binding Path=AuthorViewModel.Surname}" MinWidth="20"/>
             <TextBlock Text="{Binding Path=Title}"/>
         </StackPanel>
         
@@ -23,6 +23,28 @@
             <TextBox x:Name="authorFirstNameTextBox" Text="" MinWidth="150" />
             <TextBox x:Name="authorSurnameTextBox" Text="" MinWidth="150"/>
             <Button x:Name="editAuthorButton" Content="edit"  Click="editAuthorButton_Click" HorizontalAlignment="Left"/>
+        </StackPanel>
+        
+        <!-- Priority Binding -->
+        <StackPanel VerticalAlignment="Bottom">
+            <TextBlock Text="Priority Binding" 
+                       MaxWidth="300" MaxHeight="100" HorizontalAlignment="Left" FontStyle="Italic"
+                       TextWrapping="Wrap" TextTrimming="CharacterEllipsis" />
+            
+            <!-- Binds to the book's title. First tries to access the property BookTitle which does not exist,
+            then falls back on the property Title. If both wouldn't exist, the string of the FallbackValue-
+            attribute would be used. This is just an example, may be better used if e.g. you got a base class 
+            representation of several subclasses and for some reason a property isn't named the same.-->
+            <!-- Real life example: Displaying Sites and their parent's title (which can be either sites or
+            the root element presentation: Priority bind to Parent.Title and Presentation.Title -->
+            <TextBlock >
+                <TextBlock.Text>
+                    <PriorityBinding FallbackValue="no author available">
+                        <Binding Path="BookTitle"/>
+                        <Binding Path="Title"/>
+                    </PriorityBinding>
+                </TextBlock.Text>
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Window>

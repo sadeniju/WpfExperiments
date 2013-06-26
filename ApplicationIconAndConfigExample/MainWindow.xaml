@@ -1,0 +1,19 @@
+﻿<Window x:Class="ApplicationIconAndConfigExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fancy Window" Height="100" Width="300" 
+        Icon="window_icon.ico">
+        <!-- 
+        This application has: 
+        / An application icon (see Properties, Application, Symbol)
+        / A window icon (see window tag, icon attribute)
+        / A config file (see app.config and the settings entry in Properties, Settings).
+        / An assembly info file (in the Properties folder), containing application info like company name, product name, version, description etc
+        (will be included in the .exe file, you can view the information by right clicking on a file, goto Properties, Details or hover above the file)
+        -->
+    <StackPanel>
+        <Label Content="Read from the config file:" FontSize="15" FontWeight="SemiBold"/>
+        <TextBlock Text="{Binding}" Margin="5"/>
+        <!-- Why the f... is the textblock not aligned with the label but need extra margin (on the right) -->
+    </StackPanel>
+</Window>
