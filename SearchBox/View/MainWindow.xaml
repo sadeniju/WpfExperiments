@@ -41,7 +41,9 @@
                  Grid.Row="0"/>
         
         <!-- Reset button -->
-        <Button Click="ResetButton_Click" Background="Transparent" 
+        <Button Click="ResetButton_Click" 
+                ToolTip="Reset the search"
+                Background="Transparent" 
                 Width="25" HorizontalAlignment="Right"
                 Grid.Row="0">
             <Image Source="/Images/reset_button.png" />
