@@ -98,6 +98,7 @@ namespace SearchBox {
         /// <param name="e"></param>
         private void ResetButton_Click(object sender, RoutedEventArgs e) {
             // Reset label
+            searchBox.Text = "";
             searchLabelContent = "Search...";
             searchLabel.Content = searchLabelContent;
 

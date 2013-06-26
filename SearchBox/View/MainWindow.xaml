@@ -3,8 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Fancy Stuff" Height="350" Width="525">
     <Window.Resources>
-        
-        
         <!-- Defines how to display book objects (in the listbox below) -->
         <DataTemplate x:Key="bookTemplate">
             <Grid Margin="2">
