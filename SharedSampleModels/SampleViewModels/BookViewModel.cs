@@ -49,6 +49,8 @@ namespace SharedClasses.SampleViewModels {
         public BookViewModel(Book model) {
             Model = model;
             AuthorViewModel = new AuthorViewModel(model.Author);
+            if(!AuthorViewModel.PublishedBooks.Contains(this))
+                AuthorViewModel.PublishedBooks.Add(this);
 
             PageViewModels = new ObservableCollection<PageViewModel>();
             foreach (Page page in model.Pages) {
