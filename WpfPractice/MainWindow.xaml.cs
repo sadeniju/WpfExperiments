@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using SharedClasses.SampleViewModels;
 using SharedClasses.SampleModels;
 
 namespace CSharpPractice
@@ -9,7 +10,7 @@ namespace CSharpPractice
     /// </summary>
     public partial class MainWindow : Window
     {
-        Book myBook = new Book(new Author("Stephen Hawking"), "A Brief History Of Time", "03.01.1999");   // default private
+        BookViewModel myBook = new BookViewModel(new Book(new Author("Stephen Hawking"), "A Brief History Of Time", "03.01.1999"));   // default private
 
         private int NumberOfClicks
         {
@@ -32,7 +33,7 @@ namespace CSharpPractice
             this.NumberOfClicks = 0;
             this.Output = "Ouch, you didn't have to click that hard";
 
-            Console.WriteLine(myBook.Author + ": " + myBook.Title);
+            Console.WriteLine(myBook.AuthorViewModel + ": " + myBook.Title);
             this.DataContext = myBook;   // Objekt zur Verfuegung stellen, damit in XAML verwendbar (DataBinding)
         }
 

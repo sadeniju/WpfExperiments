@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SharedClasses.SampleModels;
+using System.Collections.ObjectModel;
 
 namespace SharedClasses.SampleViewModels {
     public class AuthorViewModel: BaseViewModel {
@@ -32,11 +33,14 @@ namespace SharedClasses.SampleViewModels {
                 RaisePropertyChanged("FullName");
             }
         }
+
+        public ObservableCollection<BookViewModel> PublishedBooks { get; set; }
         #endregion
 
         #region Construction
         public AuthorViewModel(Author model) {
             Model = model;
+            PublishedBooks = new ObservableCollection<BookViewModel>();
         }
 
         public AuthorViewModel() : this(new Author()) { }

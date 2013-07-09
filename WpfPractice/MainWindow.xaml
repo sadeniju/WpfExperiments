@@ -7,7 +7,7 @@
                 HorizontalAlignment="Center" VerticalAlignment="Top"
                 FontSize="11"
                 Content="Click me!" Click="myButton_Click" />
-        <Button x:Name="uselessButton"
+        <!--<Button x:Name="uselessButton"
                 HorizontalAlignment="Right" VerticalAlignment="Top" Height="30" Width="40">
             <StackPanel Orientation="Vertical">
                 <Rectangle Fill="Black" Height="1" Width="30" Margin="0,-10,0,0"/>
@@ -16,7 +16,7 @@
                 <Rectangle Fill="Black" Height="1" Width="30" Margin="0,5,0,0"/>
                 <Rectangle Fill="Black" Height="1" Width="30" Margin="0,5,0,0"/>
             </StackPanel>
-        </Button>
+        </Button>-->
         <TextBlock x:Name="messageText"
                    Text="Message will appear here."
                    TextWrapping="Wrap"
@@ -26,7 +26,7 @@
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top"
                 Orientation="Vertical">
             <TextBlock Text="You are currently reading: " FontSize="10"/>
-            <TextBox Text="{Binding Path=Author.FullName}"
+            <TextBox Text="{Binding Path=AuthorViewModel.FullName}"
                    Height="20" Width="Auto" MinWidth="100"
                    FontSize="11"/>
             <TextBox Text="{Binding Path=Title}"

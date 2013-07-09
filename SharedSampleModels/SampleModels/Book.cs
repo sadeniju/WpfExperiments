@@ -11,7 +11,7 @@ namespace SharedClasses.SampleModels {
         #endregion
 
         #region Properties
-        public List<Page> Pages { get; private set; }
+        public List<Page> Pages { get; set; }
         public string Title { get; set; }
         public Author Author { get; set; }
         public int Edition { get; set; }
