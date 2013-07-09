@@ -49,11 +49,21 @@
     <Compile Include="Question.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fragen1.xml" />
-    <Content Include="Fragen2.xml" />
-    <Content Include="Fragen3.xml" />
-    <Content Include="Fragen4.xml" />
-    <Content Include="Fragen5.xml" />
+    <Content Include="Fragen1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fragen2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fragen3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fragen4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fragen5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

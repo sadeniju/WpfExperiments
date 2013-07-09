@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLParserPractice2", "XMLPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationIconConfigFileAssemblyInfo", "ApplicationIconAndConfigExample\ApplicationIconConfigFileAssemblyInfo.csproj", "{8541DDEA-F573-43BD-8D7D-C2B821411310}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerControls", "ColorPickerKenJohnson\ColorPickerDemo\ColorPickerControls\ColorPickerControls.csproj", "{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -335,6 +337,16 @@ Global
 		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|x86.ActiveCfg = Release|x86
 		{8541DDEA-F573-43BD-8D7D-C2B821411310}.Release|x86.Build.0 = Release|x86
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
