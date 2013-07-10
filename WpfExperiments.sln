@@ -59,6 +59,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerControls", "Colo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPickerKenJohnson\ColorPickerDemo\ColorPicker\ColorPicker.csproj", "{059DC6C7-59C6-4ADF-8960-976A02E7498E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerInterfaceSolution", "ContainerInterfaceProblem\ContainerInterfaceSolution.csproj", "{547B5720-8502-41D3-836B-21AFB2CC8D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerInterfaceGenericProblem", "ContainerInterfaceGenericProblem\ContainerInterfaceGenericProblem.csproj", "{E4B53550-C350-414A-A705-C15BC9F5005F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -359,6 +363,26 @@ Global
 		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Release|x86.ActiveCfg = Release|Any CPU
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Debug|x86.ActiveCfg = Debug|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Debug|x86.Build.0 = Debug|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Release|Any CPU.ActiveCfg = Release|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Release|Mixed Platforms.Build.0 = Release|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Release|x86.ActiveCfg = Release|x86
+		{547B5720-8502-41D3-836B-21AFB2CC8D90}.Release|x86.Build.0 = Release|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Debug|x86.ActiveCfg = Debug|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Debug|x86.Build.0 = Debug|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Release|Any CPU.ActiveCfg = Release|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Release|x86.ActiveCfg = Release|x86
+		{E4B53550-C350-414A-A705-C15BC9F5005F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
