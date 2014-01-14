@@ -64,36 +64,38 @@ namespace AdornerSample {
                 PageViewModel previousParent = droppedPage.Parent;
                 PageViewModel newParent = targetPage.Parent;
 
-                if(mousePosition.Equals(InsertionMode.Bottom) || mousePosition.Equals(InsertionMode.Top)) {
-                    // Insert the dropped item between the drop target and its neighbor (above or below)
-                    int insertionPosition = newParent.PageViewModels.IndexOf(targetPage);
-                    int previousPosition = newParent.PageViewModels.IndexOf(droppedPage);
+                if(droppedPage != targetPage) {
+                    if(mousePosition.Equals(InsertionMode.Bottom) || mousePosition.Equals(InsertionMode.Top)) {
+                        // Insert the dropped item between the drop target and its neighbor (above or below)
+                        int insertionPosition = newParent.PageViewModels.IndexOf(targetPage);
+                        int previousPosition = newParent.PageViewModels.IndexOf(droppedPage);
 
-                    if(previousParent == newParent) {
-                        // Move inside a collection
-                        if(previousPosition > insertionPosition && mousePosition.Equals(InsertionMode.Bottom)) {
-                            insertionPosition += 1;
+                        if(previousParent == newParent) {
+                            // Move inside a collection
+                            if(previousPosition > insertionPosition && mousePosition.Equals(InsertionMode.Bottom)) {
+                                insertionPosition += 1;
+                            }
+                            else if(previousPosition < insertionPosition && mousePosition.Equals(InsertionMode.Top)) {
+                                insertionPosition -= 1;
+                            }
+                            newParent.PageViewModels.Move(previousPosition, insertionPosition);
                         }
-                        else if(previousPosition < insertionPosition && mousePosition.Equals(InsertionMode.Top)) {
-                            insertionPosition -= 1;
+                        else {
+                            // Move to another parent page
+                            if(mousePosition.Equals(InsertionMode.Bottom)) {
+                                insertionPosition += 1;
+                            }
+
+                            newParent.PageViewModels.Insert(insertionPosition, droppedPage);
+                            previousParent.PageViewModels.Remove(droppedPage);
                         }
-                        newParent.PageViewModels.Move(previousPosition, insertionPosition);
+                        droppedPage.Parent = newParent; // isn't updated automatically on insert - set manually
                     }
                     else {
-                        // Move to another parent page
-                        if(mousePosition.Equals(InsertionMode.Bottom)) {
-                            insertionPosition += 1;
-                        }
-
-                        newParent.PageViewModels.Insert(insertionPosition, droppedPage);
+                        // Add the dropped item to the target item's parent's collection
                         previousParent.PageViewModels.Remove(droppedPage);
+                        targetPage.PageViewModels.Add(droppedPage);
                     }
-                    droppedPage.Parent = newParent; // isn't updated automatically on insert - set manually
-                }
-                else {
-                    // Add the dropped item to the target item's parent's collection
-                    previousParent.PageViewModels.Remove(droppedPage);
-                    targetPage.PageViewModels.Add(droppedPage);
                 }
             }
 
@@ -118,7 +120,7 @@ namespace AdornerSample {
                     DragDrop.DoDragDrop(treeViewItem, dragData, DragDropEffects.Move);
                     //Console.WriteLine("dragging "+treeViewItem.DataContext + ", child of " + (treeViewItem.DataContext as PageViewModel).Parent);
 
-                    // @TODO maybe also remove adorners here? If they still exist due to some bug?
+                    // @TODO maybe also remove adorners here? If they still exist due to some bug? - Doesn't seem necessary.
                 }
             }
         }
@@ -129,16 +131,21 @@ namespace AdornerSample {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void TreeView_PreviewDragEnter(object sender, DragEventArgs e) {
-            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
+            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);    // the entered item
+
             if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
                 // Add an insertion line adorner to show the user, between which items the dragged item will be inserted, if dropped now.
                 InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
-                
-                if(!mode.Equals(InsertionMode.Middle)) {
-                    insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
-                }
-                else {
-                    insertionSelection = new InsertionRectangleAdordner(treeViewItem);
+                PageViewModel draggedPage = e.Data.GetData("pageFormat") as PageViewModel;
+                PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
+
+                if(draggedPage != targetPage) { // Dragged item must not be the target
+                    if(!mode.Equals(InsertionMode.Middle)) {
+                        insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
+                    }
+                    else {
+                        insertionSelection = new InsertionRectangleAdordner(treeViewItem);
+                    }
                 }
             }
         }
@@ -165,22 +172,26 @@ namespace AdornerSample {
         private void TreeView_DragOver(object sender, DragEventArgs e) {
             TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
             if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
-                // Update the adorners by removing, instantiating or moving them.
-                InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
-                if(mode.Equals(InsertionMode.Middle)){
-                    RemoveInsertionLineAdorner();
-                    if(insertionSelection == null) {
-                        insertionSelection = new InsertionRectangleAdordner(treeViewItem);
-                        Console.WriteLine("--Creating new RECT");
-                    }
-                }
-                else{
-                    RemoveElementSelectionAdorner();
-                    if(insertionLine != null) {
-                        insertionLine.UpdatePosition(mode == InsertionMode.Top ? true : false);
+                PageViewModel draggedPage = e.Data.GetData("pageFormat") as PageViewModel;
+                PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
+
+                if(draggedPage != targetPage) { // Dragged item must not be the target
+                    // Update the adorners by removing, instantiating or moving them.
+                    InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
+                    if(mode.Equals(InsertionMode.Middle)) {
+                        RemoveInsertionLineAdorner();
+                        if(insertionSelection == null) {
+                            insertionSelection = new InsertionRectangleAdordner(treeViewItem);
+                        }
                     }
                     else {
-                        insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
+                        RemoveElementSelectionAdorner();
+                        if(insertionLine != null) {
+                            insertionLine.UpdatePosition(mode == InsertionMode.Top ? true : false);
+                        }
+                        else {
+                            insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
+                        }
                     }
                 }
             }

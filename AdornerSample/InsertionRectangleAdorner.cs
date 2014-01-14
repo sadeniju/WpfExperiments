@@ -48,7 +48,6 @@ namespace AdornerSample {
         protected override void OnRender(DrawingContext drawingContext) {
             Rect rect = new Rect(rectangleSize);
             drawingContext.DrawRectangle(renderBrush, renderPen, rect);
-            Console.WriteLine("draaawing rect");
         }
     }
 }

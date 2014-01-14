@@ -61,8 +61,6 @@ namespace AdornerSample {
             }
 
             drawingContext.DrawLine(renderPen, firstPoint, secondPoint);
-
-            Console.WriteLine("draaawing line");
         }
 
         /// <summary>
