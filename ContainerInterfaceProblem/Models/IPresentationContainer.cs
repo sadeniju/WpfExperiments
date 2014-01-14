@@ -7,6 +7,6 @@ namespace ContainerInterfaceSolution {
     interface IPresentationContainer {
         List<Content> Contents { get; }
 
-        void AddContent(T content);
+        void AddContent(Content content);
     }
 }
