@@ -1,12 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using System.Collections.ObjectModel;
-using SharedClasses.SampleModels;
-using SharedClasses.ExtensionMethods;
 
 namespace SearchBox {
     /// <summary>
@@ -23,13 +28,13 @@ namespace SearchBox {
         public MainWindow() {
             // Create a dummy list of books
             library = new List<Book>{
-                new Book(new Author("George Gamow"), "One Two Three Infinity", "01/01/1975"),
-                new Book(new Author("Max Brooks"), "World War Z", "06/01/2013"),
-                new Book(new Author("Gillian Flynn"), "Dark Places", "13/09/2013"),
-                new Book(new Author("Somebody Else"), "The Mysterious Flame", "24/11/2013"),
-                new Book(new Author("Some Writer"), "How To Kill A Mockingbird", "17/05/2013"),
-                new Book(new Author("Karin Slaughter"), "Triptych", "07/31/2013"),
-                new Book(new Author("Some Knuth"), "The Art of Computer Programming", "06/01/2013")
+                new Book("George Gamow", "One Two Three Infinity", "01/01/1975"),
+                new Book("Max Brooks", "World War Z", "06/01/2013"),
+                new Book("Gillian Flynn", "Dark Places", "13/09/2013"),
+                new Book("Somebody Else", "The Mysterious Flame", "24/11/2013"),
+                new Book("Some Author", "How To Kill A Mockingbird", "17/05/2013"),
+                new Book("Karin Slaughter", "Triptych", "07/31/2013"),
+                new Book("Some Knuth", "The Art of Computer Programming", "06/01/2013")
             };
 
             Books = new ObservableCollection<Book>();
@@ -59,7 +64,7 @@ namespace SearchBox {
 
                 // Update books
                 List<Book> selectedBooks = (from book in library
-                                            where book.Title.ToUpperInvariant().Contains(searchString) || book.Author.FullName.ToUpperInvariant().Contains(searchString)
+                                            where book.Title.ToUpperInvariant().Contains(searchString) || book.Author.ToUpperInvariant().Contains(searchString)
                                             select book).ToList<Book>();
                 Books.AddAll<Book>(selectedBooks);
             }
@@ -99,7 +104,6 @@ namespace SearchBox {
         /// <param name="e"></param>
         private void ResetButton_Click(object sender, RoutedEventArgs e) {
             // Reset label
-            searchBox.Text = "";
             searchLabelContent = "Search...";
             searchLabel.Content = searchLabelContent;
 

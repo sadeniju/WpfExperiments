@@ -11,7 +11,7 @@
                     <ColumnDefinition Width="250"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="{Binding Author.FullName}" Grid.Column="0"/>
+                <TextBlock Text="{Binding Author}" Grid.Column="0"/>
                 <TextBlock Text="{Binding Title}" Grid.Column="1"/>
                 <TextBlock Text="{Binding ReleaseDate}" Grid.Column="2"/>
             </Grid>
@@ -28,7 +28,7 @@
         
         <!-- THE SEARCHBOX -->
         <!-- Label which overlays the searchbox -->
-        <Label x:Name="searchLabel" Content="Search..." 
+        <Label x:Name="searchLabel" Content="Search..." Opacity="0.5"
                Grid.Row="0"/>
         
         <!-- Searchbox -->
@@ -41,9 +41,7 @@
                  Grid.Row="0"/>
         
         <!-- Reset button -->
-        <Button Click="ResetButton_Click" 
-                ToolTip="Reset the search"
-                Background="Transparent" 
+        <Button Click="ResetButton_Click" Background="Transparent" 
                 Width="25" HorizontalAlignment="Right"
                 Grid.Row="0">
             <Image Source="/Images/reset_button.png" />
@@ -54,8 +52,7 @@
             <!-- The list's headline -->
             <Label Content="Results" FontSize="15" FontWeight="SemiBold" />
 
-            <!-- @TODO replace the list with a table -->
-            <!-- The list's header-->
+            <!-- The list's header (maybe there is another (less constructed) way to add a header) -->
             <Grid Background="#1111">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"/>
