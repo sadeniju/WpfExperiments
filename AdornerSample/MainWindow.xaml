@@ -8,7 +8,7 @@
                                   ItemsSource="{Binding Path=PageViewModels}" >
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding}"
-                           Margin="5" />
+                           Margin="20" />
             </StackPanel>
         </HierarchicalDataTemplate>
     </Window.Resources>
@@ -19,6 +19,7 @@
                   PreviewMouseMove="TreeView_PreviewMouseMove"
                   PreviewDragEnter="TreeView_PreviewDragEnter"
                   PreviewDragLeave="TreeView_PreviewDragLeave"
+                  DragOver="TreeView_DragOver"
                   AllowDrop="True"
                   Drop="TreeView_Drop"
                   >

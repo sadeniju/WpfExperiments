@@ -8,41 +8,72 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 
 namespace AdornerSample {
-    public class InsertionLineAdordner : Adorner {
-        bool lineOnTop;
-        // Be sure to call the base class constructor. 
-        public InsertionLineAdordner(UIElement adornedElement, bool lineOnTop) : base(adornedElement){
-            this.lineOnTop = lineOnTop;
-        }
+    public enum InsertionMode {
+        Top,
+        Bottom,
+        Middle
+    }
 
-        // A common way to implement an adorner's rendering behavior is to override the OnRender 
-        // method, which is called by the layout system as part of a rendering pass. 
+    /// <summary>
+    /// Represents an insertion line, giving the user visual clues.
+    /// </summary>
+    public class InsertionLineAdordner : ElementAdorner {
+        #region Fields
+        protected bool insertAboveItem;
+        protected Pen renderPen;
+        protected double lineWidth;
+        #endregion
+
+        #region Construction
+        /// <summary>
+        /// Constructs an instance.
+        /// </summary>
+        /// <param name="adornedElement"></param>
+        public InsertionLineAdordner(UIElement adornedElement, bool insertAboveItem) : this(adornedElement, insertAboveItem, adornedElement.DesiredSize.Width){}
+
+        /// <summary>
+        /// Constructs an instance with a specific line width.
+        /// </summary>
+        /// <param name="adornedElement"></param>
+        /// <param name="insertAboveItem"></param>
+        public InsertionLineAdordner(UIElement adornedElement, bool insertAboveItem, double lineWidth): base(adornedElement) {
+            this.insertAboveItem = insertAboveItem;
+            this.lineWidth = lineWidth;
+            renderPen = new Pen(new SolidColorBrush(Colors.Navy), 1);
+        }
+        #endregion
+
+        /// <summary>
+        /// The adorner's rendering behavior, called by the layout system as part of a rendering pass.
+        /// </summary>
+        /// <param name="drawingContext"></param>
         protected override void OnRender(DrawingContext drawingContext){
             Point firstPoint;
             Point secondPoint;
 
-            if(lineOnTop) {
+            if(insertAboveItem) {
                 firstPoint = new Point(0, 0);
-                secondPoint = new Point(100, 100);
+                secondPoint = new Point(lineWidth, 0);
             }
-            else {
+            else{
                 firstPoint = new Point(0, AdornedElement.DesiredSize.Height);
-                secondPoint = new Point(100, AdornedElement.DesiredSize.Height);
+                secondPoint = new Point(lineWidth, AdornedElement.DesiredSize.Height);
             }
 
-            // Some arbitrary drawing implements.
-            SolidColorBrush renderBrush = new SolidColorBrush(Colors.Blue);
-            renderBrush.Opacity = 0.2;
-            Pen renderPen = new Pen(new SolidColorBrush(Colors.Navy), 1.5);
             drawingContext.DrawLine(renderPen, firstPoint, secondPoint);
-            
-            //double renderRadius = 5.0;
 
-            //// Draw a circle at each corner.
-            //drawingContext.DrawEllipse(renderBrush, renderPen, adornedElementRect.TopLeft, renderRadius, renderRadius);
-            //drawingContext.DrawEllipse(renderBrush, renderPen, adornedElementRect.TopRight, renderRadius, renderRadius);
-            //drawingContext.DrawEllipse(renderBrush, renderPen, adornedElementRect.BottomLeft, renderRadius, renderRadius);
-            //drawingContext.DrawEllipse(renderBrush, renderPen, adornedElementRect.BottomRight, renderRadius, renderRadius);
+            Console.WriteLine("draaawing line");
+        }
+
+        /// <summary>
+        /// Updates the adorner's position and redraws it. 
+        /// </summary>
+        /// <param name="insertAboveItem"></param>
+        public void UpdatePosition(bool insertAboveItem) {
+            if(this.insertAboveItem != insertAboveItem) {
+                this.insertAboveItem = insertAboveItem;
+                this.InvalidateVisual();    // force redraw
+            }
         }
     }
 }

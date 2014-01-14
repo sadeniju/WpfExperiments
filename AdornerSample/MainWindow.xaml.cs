@@ -11,14 +11,25 @@ namespace AdornerSample {
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-        Point startPoint;
+        #region Fields
+        private Point startPoint;
+        private InsertionLineAdordner insertionLine;
+        private InsertionRectangleAdordner insertionSelection;
+        #endregion
 
+        #region Properties
         public PageViewModel Root { get; private set; }
+        #endregion
 
+        /// <summary>
+        /// Initializes the main window.
+        /// </summary>
         public MainWindow() {
             InitializeComponent();
+
             Root = new PageViewModel();
 
+            // Construct a random tree of pages
             for(int i=0; i < 5; i++){
                 PageViewModel viewModel = new PageViewModel();
                 viewModel.RandomlyCreateChildren(true);
@@ -27,9 +38,68 @@ namespace AdornerSample {
             this.DataContext = Root.PageViewModels;
         }
 
+        /// <summary>
+        /// Keep the initial mouse pressed position (used to check the drag distance).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TreeView_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e){
             // Store the mouse position 
             startPoint = e.GetPosition(null);
+        }
+
+        /// <summary>
+        /// Handles dropping of elements.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TreeView_Drop(object sender, DragEventArgs e) {
+            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);    // the drop target
+            
+            // Insert the dropped item according to its insertion mode (before, after or onto the drop target)
+            if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
+                InsertionMode mousePosition = GetRelativeMousePosition(e, treeViewItem);
+                PageViewModel droppedPage = e.Data.GetData("pageFormat") as PageViewModel;
+                PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
+                PageViewModel previousParent = droppedPage.Parent;
+                PageViewModel newParent = targetPage.Parent;
+
+                if(mousePosition.Equals(InsertionMode.Bottom) || mousePosition.Equals(InsertionMode.Top)) {
+                    // Insert the dropped item between the drop target and its neighbor (above or below)
+                    int insertionPosition = newParent.PageViewModels.IndexOf(targetPage);
+                    int previousPosition = newParent.PageViewModels.IndexOf(droppedPage);
+
+                    if(previousParent == newParent) {
+                        // Move inside a collection
+                        if(previousPosition > insertionPosition && mousePosition.Equals(InsertionMode.Bottom)) {
+                            insertionPosition += 1;
+                        }
+                        else if(previousPosition < insertionPosition && mousePosition.Equals(InsertionMode.Top)) {
+                            insertionPosition -= 1;
+                        }
+                        newParent.PageViewModels.Move(previousPosition, insertionPosition);
+                    }
+                    else {
+                        // Move to another parent page
+                        if(mousePosition.Equals(InsertionMode.Bottom)) {
+                            insertionPosition += 1;
+                        }
+
+                        newParent.PageViewModels.Insert(insertionPosition, droppedPage);
+                        previousParent.PageViewModels.Remove(droppedPage);
+                    }
+                    droppedPage.Parent = newParent; // isn't updated automatically on insert - set manually
+                }
+                else {
+                    // Add the dropped item to the target item's parent's collection
+                    previousParent.PageViewModels.Remove(droppedPage);
+                    targetPage.PageViewModels.Add(droppedPage);
+                }
+            }
+
+            // Remove insertion visualization
+            RemoveInsertionLineAdorner();   
+            RemoveElementSelectionAdorner();
         }
 
         /// <summary>
@@ -39,71 +109,109 @@ namespace AdornerSample {
         /// <param name="e"></param>
         private void TreeView_PreviewMouseMove(object sender, MouseEventArgs e) {
             // Get the current mouse position to distinguish between click and drag
-            Point mousePos = e.GetPosition(null);
-            Vector diff = startPoint - mousePos;
+            if(e.LeftButton == MouseButtonState.Pressed && MovedDragDropDistance(e)) {
+                TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);    // Find the hit item
 
-            if(e.LeftButton == MouseButtonState.Pressed && Math.Abs(diff.X) > SystemParameters.MinimumHorizontalDragDistance || Math.Abs(diff.Y) > SystemParameters.MinimumVerticalDragDistance) {
-                // Find the hit item
-                TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
-                //treeViewItem.Background.
                 // Initiate Drag and Drop
                 if(e.LeftButton == MouseButtonState.Pressed && treeViewItem != null) {
                     DataObject dragData = new DataObject("pageFormat", treeViewItem.DataContext);
                     DragDrop.DoDragDrop(treeViewItem, dragData, DragDropEffects.Move);
                     //Console.WriteLine("dragging "+treeViewItem.DataContext + ", child of " + (treeViewItem.DataContext as PageViewModel).Parent);
+
+                    // @TODO maybe also remove adorners here? If they still exist due to some bug?
                 }
-
-                
             }
-
-            // @TODO Update Adorners
         }
 
-        private void TreeView_Drop(object sender, DragEventArgs e) {
-            // Find the hit item
+        /// <summary>
+        /// Handles drag enter events.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TreeView_PreviewDragEnter(object sender, DragEventArgs e) {
             TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
-            
             if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
-                double clickPositionY = e.GetPosition(treeViewItem).Y;
-                bool clickedInUpperQuarter = clickPositionY < treeViewItem.ActualHeight / 4;
-                bool clickedInLowerQuarter = clickPositionY > treeViewItem.ActualHeight / 4 * 3;
-                PageViewModel droppedPage = e.Data.GetData("pageFormat") as PageViewModel;
-                PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
-                PageViewModel previousParent = droppedPage.Parent;
-                PageViewModel newParent = targetPage.Parent;
-  
-                if(clickedInUpperQuarter || clickedInLowerQuarter) {
-                    // Insert the dropped item above or below the target item
-                    int insertionPosition = newParent.PageViewModels.IndexOf(targetPage);
-                    int previousPosition = newParent.PageViewModels.IndexOf(droppedPage);
-
-                    if(previousParent == newParent) {
-                        // Move inside a collection
-                        if(previousPosition > insertionPosition && clickedInLowerQuarter) {
-                            insertionPosition += 1;
-                        }
-                        else if(previousPosition < insertionPosition && clickedInUpperQuarter) {
-                            insertionPosition -= 1;
-                        }
-                        newParent.PageViewModels.Move(previousPosition, insertionPosition);
-                    }
-                    else {
-                        // Move to another parent page
-                        if(clickPositionY > treeViewItem.ActualHeight / 4 * 3) {
-                            insertionPosition += 1;
-                        }
-
-                        newParent.PageViewModels.Insert(insertionPosition, droppedPage);
-                        previousParent.PageViewModels.Remove(droppedPage);
-                    }
-                    droppedPage.Parent = newParent; // isn't updated automatically on insert
+                // Add an insertion line adorner to show the user, between which items the dragged item will be inserted, if dropped now.
+                InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
+                
+                if(!mode.Equals(InsertionMode.Middle)) {
+                    insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
                 }
                 else {
-                    // Add the dropped item to the target item's parent's collection
-                    previousParent.PageViewModels.Remove(droppedPage);
-                    targetPage.PageViewModels.Add(droppedPage);
+                    insertionSelection = new InsertionRectangleAdordner(treeViewItem);
                 }
             }
+        }
+
+        /// <summary>
+        /// Handles drag leave events.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TreeView_PreviewDragLeave(object sender, DragEventArgs e) {
+            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
+            if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
+                // Remove the insertion line adorner
+                RemoveInsertionLineAdorner();
+                RemoveElementSelectionAdorner();
+            }
+        }
+
+        /// <summary>
+        /// Handles the mouse hovering above an element while dragging.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TreeView_DragOver(object sender, DragEventArgs e) {
+            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
+            if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
+                // Update the adorners by removing, instantiating or moving them.
+                InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
+                if(mode.Equals(InsertionMode.Middle)){
+                    RemoveInsertionLineAdorner();
+                    if(insertionSelection == null) {
+                        insertionSelection = new InsertionRectangleAdordner(treeViewItem);
+                        Console.WriteLine("--Creating new RECT");
+                    }
+                }
+                else{
+                    RemoveElementSelectionAdorner();
+                    if(insertionLine != null) {
+                        insertionLine.UpdatePosition(mode == InsertionMode.Top ? true : false);
+                    }
+                    else {
+                        insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
+                    }
+                }
+            }
+        }
+
+        #region Helper functions
+        private void RemoveInsertionLineAdorner() {
+            if(insertionLine != null) {
+                insertionLine.Detach();
+                insertionLine = null;
+            }
+        }
+
+        private void RemoveElementSelectionAdorner() {
+            if(insertionSelection != null) {
+                insertionSelection.Detach();
+                insertionSelection = null;
+            }
+        }
+
+        /// <summary>
+        /// Determines whether the mouse has moved over the minimal drag drop distance.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
+        private bool MovedDragDropDistance(MouseEventArgs e) {
+            Point mousePos = e.GetPosition(null);
+            Vector diff = startPoint - mousePos;
+            if(Math.Abs(diff.X) > SystemParameters.MinimumHorizontalDragDistance || Math.Abs(diff.Y) > SystemParameters.MinimumVerticalDragDistance)
+                return true;
+            return false;
         }
 
         /// <summary>
@@ -114,8 +222,8 @@ namespace AdornerSample {
         /// <param name="current">Current tree item from which the search originates.</param>
         /// <returns></returns>
         private static T FindAnchestor<T>(DependencyObject current) where T : DependencyObject {
-            do{
-                if(current is T){
+            do {
+                if(current is T) {
                     return (T)current;
                 }
                 current = VisualTreeHelper.GetParent(current);
@@ -124,39 +232,16 @@ namespace AdornerSample {
             return null;
         }
 
-        private void TreeView_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e) {
-
-        }
-
-        AdornerLayer myAdornerLayer;
-        InsertionLineAdordner insertionLine;
-        private void TreeView_PreviewDragEnter(object sender, DragEventArgs e) {
-            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
-            if(treeViewItem != null) {
-                double mousePositionY = e.GetPosition(treeViewItem).Y;
-                bool mouseInUpperQuarter = mousePositionY < treeViewItem.ActualHeight / 4;
-                bool mouseInLowerQuarter = mousePositionY > treeViewItem.ActualHeight / 4 * 3;
-                myAdornerLayer = AdornerLayer.GetAdornerLayer(treeViewItem);
-                if(mouseInUpperQuarter) {
-                    insertionLine = new InsertionLineAdordner(treeViewItem, true);
-                    myAdornerLayer.Add(insertionLine);
-                }
-                else if(mouseInLowerQuarter) {
-                    insertionLine = new InsertionLineAdordner(treeViewItem, false);
-                    myAdornerLayer.Add(insertionLine);
-                }
-                else {
-                    myAdornerLayer.Remove(insertionLine);
-                }
+        private InsertionMode GetRelativeMousePosition(DragEventArgs e, TreeViewItem treeViewItem) {
+            double mousePositionY = e.GetPosition(treeViewItem).Y;
+            if(mousePositionY < treeViewItem.ActualHeight / 4) {
+                return InsertionMode.Top;
             }
-        }
-
-        private void TreeView_PreviewDragLeave(object sender, DragEventArgs e) {
-            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
-            if(treeViewItem != null) {
-                myAdornerLayer = AdornerLayer.GetAdornerLayer(treeViewItem);
-                myAdornerLayer.Remove(insertionLine);
+            else if(mousePositionY > treeViewItem.ActualHeight / 4 * 3) {
+                return InsertionMode.Bottom;
             }
+            return InsertionMode.Middle;
         }
+        #endregion
     }
 }
