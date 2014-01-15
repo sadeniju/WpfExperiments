@@ -39,7 +39,7 @@ namespace AdornerSample {
         public InsertionLineAdordner(UIElement adornedElement, bool insertAboveItem, double lineWidth): base(adornedElement) {
             this.insertAboveItem = insertAboveItem;
             this.lineWidth = lineWidth;
-            renderPen = new Pen(new SolidColorBrush(Colors.Navy), 1);
+            renderPen = new Pen(new SolidColorBrush(Colors.DarkCyan), 3);
         }
         #endregion
 

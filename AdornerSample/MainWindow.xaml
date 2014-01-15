@@ -21,9 +21,7 @@
                   PreviewDragLeave="TreeView_PreviewDragLeave"
                   DragOver="TreeView_DragOver"
                   AllowDrop="True"
-                  Drop="TreeView_Drop"
-                  >
-                  
+                  Drop="TreeView_Drop">
         </TreeView>
     </Grid>
 </Window>

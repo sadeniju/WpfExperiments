@@ -21,6 +21,7 @@ namespace AdornerSample {
         public PageViewModel Root { get; private set; }
         #endregion
 
+        #region Construction
         /// <summary>
         /// Initializes the main window.
         /// </summary>
@@ -37,17 +38,9 @@ namespace AdornerSample {
             }
             this.DataContext = Root.PageViewModels;
         }
+        #endregion
 
-        /// <summary>
-        /// Keep the initial mouse pressed position (used to check the drag distance).
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void TreeView_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e){
-            // Store the mouse position 
-            startPoint = e.GetPosition(null);
-        }
-
+        #region Drag Drop Handling
         /// <summary>
         /// Handles dropping of elements.
         /// </summary>
@@ -125,6 +118,7 @@ namespace AdornerSample {
             }
         }
 
+        #region Visual feedback
         /// <summary>
         /// Handles drag enter events.
         /// </summary>
@@ -147,6 +141,13 @@ namespace AdornerSample {
                         insertionSelection = new InsertionRectangleAdordner(treeViewItem);
                     }
                 }
+
+                e.Effects = DragDropEffects.Move;
+                e.Handled = true;
+            }
+            else {
+                e.Effects = DragDropEffects.None;
+                e.Handled = true;
             }
         }
 
@@ -170,8 +171,10 @@ namespace AdornerSample {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void TreeView_DragOver(object sender, DragEventArgs e) {
-            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);
+            TreeViewItem treeViewItem = FindAnchestor<TreeViewItem>((DependencyObject)e.OriginalSource);    // target item
+
             if(treeViewItem != null && e.Data.GetDataPresent("pageFormat")) {
+                // Drag is valid - add visual cues for the user
                 PageViewModel draggedPage = e.Data.GetData("pageFormat") as PageViewModel;
                 PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
 
@@ -179,12 +182,15 @@ namespace AdornerSample {
                     // Update the adorners by removing, instantiating or moving them.
                     InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
                     if(mode.Equals(InsertionMode.Middle)) {
+                        // Select the target item
+                        //treeViewItem.ExpandSubtree();
                         RemoveInsertionLineAdorner();
                         if(insertionSelection == null) {
                             insertionSelection = new InsertionRectangleAdordner(treeViewItem);
                         }
                     }
                     else {
+                        // Add insertion line to the item
                         RemoveElementSelectionAdorner();
                         if(insertionLine != null) {
                             insertionLine.UpdatePosition(mode == InsertionMode.Top ? true : false);
@@ -194,10 +200,28 @@ namespace AdornerSample {
                         }
                     }
                 }
+                e.Effects = DragDropEffects.Move;
+                e.Handled = true;
+            }
+            else {
+                e.Effects = DragDropEffects.None;
+                e.Handled = true;
             }
         }
+        #endregion
+        #endregion
 
         #region Helper functions
+        /// <summary>
+        /// Keep the initial mouse pressed position (used to check the drag distance).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TreeView_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+            // Store the mouse position 
+            startPoint = e.GetPosition(null);
+        }
+
         private void RemoveInsertionLineAdorner() {
             if(insertionLine != null) {
                 insertionLine.Detach();

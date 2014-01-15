@@ -35,9 +35,9 @@ namespace AdornerSample {
             : base(adornedElement) {
             this.rectangleSize = rectangleSize;
 
-            renderBrush = new SolidColorBrush(Colors.Blue);
-            renderBrush.Opacity = 0.5;
-            renderPen = new Pen(new SolidColorBrush(Colors.Navy), 1.5);
+            renderBrush = new SolidColorBrush(Colors.Cyan);
+            renderBrush.Opacity = 0.1;
+            renderPen = new Pen(new SolidColorBrush(Colors.DarkCyan), 2.0);
         }
         #endregion
 
