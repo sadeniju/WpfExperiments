@@ -57,7 +57,7 @@ namespace AdornerSample {
                 PageViewModel previousParent = droppedPage.Parent;
                 PageViewModel newParent = targetPage.Parent;
 
-                if(droppedPage != targetPage) {
+                if(droppedPage != targetPage && !IsElementChildOf(droppedPage, targetPage)) { // item cannot be dropped on itself or become a child of itself
                     if(mousePosition.Equals(InsertionMode.Bottom) || mousePosition.Equals(InsertionMode.Top)) {
                         // Insert the dropped item between the drop target and its neighbor (above or below)
                         int insertionPosition = newParent.PageViewModels.IndexOf(targetPage);
@@ -133,7 +133,7 @@ namespace AdornerSample {
                 PageViewModel draggedPage = e.Data.GetData("pageFormat") as PageViewModel;
                 PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
 
-                if(draggedPage != targetPage) { // Dragged item must not be the target
+                if(draggedPage != targetPage && !IsElementChildOf(draggedPage, targetPage)) { // Dragged item must not be the target
                     if(!mode.Equals(InsertionMode.Middle)) {
                         insertionLine = new InsertionLineAdordner(treeViewItem, mode == InsertionMode.Top ? true : false);
                     }
@@ -178,7 +178,7 @@ namespace AdornerSample {
                 PageViewModel draggedPage = e.Data.GetData("pageFormat") as PageViewModel;
                 PageViewModel targetPage = treeViewItem.DataContext as PageViewModel;
 
-                if(draggedPage != targetPage) { // Dragged item must not be the target
+                if(draggedPage != targetPage && !IsElementChildOf(draggedPage, targetPage)) { // Dragged item must not be the target
                     // Update the adorners by removing, instantiating or moving them.
                     InsertionMode mode = GetRelativeMousePosition(e, treeViewItem);
                     if(mode.Equals(InsertionMode.Middle)) {
@@ -212,6 +212,17 @@ namespace AdornerSample {
         #endregion
 
         #region Helper functions
+        private bool IsElementChildOf(PageViewModel element, PageViewModel possibleChild) {
+            PageViewModel parent = possibleChild.Parent;
+            while(parent != null) {
+                if(element == parent) {
+                    return true;
+                }
+                parent = parent.Parent;
+            }
+            return false;
+        }
+
         /// <summary>
         /// Keep the initial mouse pressed position (used to check the drag distance).
         /// </summary>
